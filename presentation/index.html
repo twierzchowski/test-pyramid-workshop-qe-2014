@@ -213,78 +213,112 @@
       <div class="slides">
 
         <section>
-          <h1>Śladami faraonów</h1>
-          <h3>Pragmatyczna podróż<br/>po piramidzie testów</h3>
+          <h1>Agile QA</h1>
+          <h3>Pragmatyczne zapewnianie jakości</h3>
           <span class="license">
-            Quality Excites - 2014 &copy; License:
+            License:
             <a href="http://creativecommons.org/licenses/by-nd/3.0/pl/">CC BY-ND 3.0 PL</a>
           </span>
-
-          <aside class="notes">
-            <ul>
-              <li class="speaker">KAMILA</li>
-              <li><time>2 minuty</time></li>
-              <li>
-                Witamy państwa na prezentacji poświęconej piramidzie testów. Ja nazywam się Kamila Kupidura i Razem z kolegami przygotowaliśmy warsztat, podczas którego zaprezentujemy od strony teoretycznej i praktycznej poszczególne poziomy i typy testów.
-              </li>
-              <li>
-                Możecie śmiało zadawać pytania w trakcie prezentacji.
-              </li>
-              <li>
-                Prosimy o wypełnienie ankiet w trakcie szkolenia. Na końcu je zbierzemy, bardzo liczymy na Wasz feedback.
-              </li>
-              <li>
-                Przejdziemy krok po kroku procesem tworzenia oprogramowania, podczas każdego przystanku zapoznamy się z odpowiadającym mu elementem w piramidzie. Dzięki temu skupimy się też, na praktycznej stronie tworzenia testów.
-              </li>
-              <li>
-                Bardzo mocno będziemy wykorzystywać Ruby jako język programowania i narzędzia związane z tą społecznością.
-              </li>
-              <li>
-                Runda - Imię, Nazwisko, Stanowisko, Znajomość Ruby (TAK/NIE).
-              </li>
-            </ul>
-          </aside>
         </section>
 
         <section>
 
           <section class="theory">
+            <h1>1h - test plany, strategie, metodyki </h1>
             <h2>Testy oprogramowania</h2>
 
             <h3>Kto? Co? Jak?</h3>
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>1 minuta</time></li>
-                <li>
-                  Testowanie oprogramowania – proces związany z wytwarzaniem oprogramowania. Jest to jeden z procesów zapewnienia jakości oprogramowania. Testowanie ma na celu weryfikację oraz walidację oprogramowania.
-                </li>
-                <li>
-                  <strong>Walidacja</strong> to sprawdzenie czy produkt spełnia wymagania.
-                </li>
-                <li>
-                  <strong>Weryfikacja</strong> to sprawdzenie czy wyniki aktualnego etapu spełniają założenia przyjęte na początku analizowanej fazy projektu.
-                </li>
-                <li>
-                  <strong>Norma:</strong> IEEE-STD-610
-                </li>
-              </ul>
-            </aside>
           </section>
+		  
+		  <section>
+			<h2>Mam plan</h2>
+Chaos
+Zwinnie czyli chaos
+Nie mamy planu
+Nie wiem
+Był plan ale porzuciliśmy go
+Wszystko się zmienia więc nie warto planować
+		  </section>
+		  
+		  <section>
+		  <h2>Testing strategy – Test Plan</h2>
+Przewodnik, wizja
+Jak i kiedy
+Zakres
+Typy i poziomy testów (kryteria wy/we)
+Środowiska
+Zarządzanie błędami
+Metryki (kryteria akceptacji)
+
+notes:
+Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
+Is a story which tells how we are going to test - there could be many stories
+Product-specific (but generic is also good)
+Strategy guides test design
+Why bother?
+Who cares?
+How much?
+Risk-focused
+Strategy vs Test Plan
+	Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
+Test Strategy
+	Strategy guides test design
+	Why bother?
+	Who cares?
+	How much?
+	Is a story which tells how we are going to test - there could be many stories
+	Product-specific (but generic is also good)
+	Risk-focused
+	Diversiffied
+	Practical
+	First version is always wrong
+		Learn about the product
+		Strategy evolves
+		Risk might change
+Diversiffied
+Practical
+First version is always wrong
+	Learn about the product
+	Strategy evolves
+	Risk might change
+
+		  </section>
+		  
+		  <section>
+		<h2>Test Plan</h2>
+Estymacje i harmonogram
+Przypadki testowe
+Dane
+Konkretne narzędzia
+Role i odpowiedzialności
+Artefakty
+Raportowanie wyników
+
+		  </section>
+		  
+		  <section>
+		  <h2>Testing strategy – Test Plan</h2>
+			Przykłady
+		  </section>
+		  
+		  <section>
+		   <h2>Testing strategy – Test Plan - pułapki</h2>
+Ślepe i bezmyślne trzymanie się planu
+Armata na wróbla i zbyt ambitny (prawo)
+Zbyt detaliczny -> koszty utrzymania
+
+„Time spend on documenting is time not spent on testing”
+	J.Bach
+
+		  </section>
+		  
 
           <section class="theory">
             <h1>Tester?</h1>
 
             <img class="left space-right" src="img/Monkey.jpg" alt="Tester małpa ;)" />
             <img height="295" width="369" class="right" src="img/Dobromir.jpg" alt="Tester pomysłowy ;)" />
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>1 minuta</time></li>
-              </ul>
-            </aside>
           </section>
 
           <section class="theory">
@@ -292,66 +326,62 @@
 
             <img class="huge" src="img/Waterfall.png" alt="Waterfall" />
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Testowanie to przed ostatnia faza w modelu kaskadowym.
-                </li>
-                <li>
-                  Na testera w jednym momencie spada praca z poprzednich 4 bloków.
-                </li>
-              </ul>
-            </aside>
           </section>
+		  
+		  <section>
+		    <h2>Waterfall i inne</h2>
+			<img class="huge" src="img/Waterfall_inne.png" alt="Waterfall" />
+		  </section>
 
           <section class="theory">
             <h1>Agile</h1>
-
+			tutaj ogólnie o agile
             <img class="big" src="img/Agile.jpg" alt="Agile" />
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-              </ul>
-            </aside>
           </section>
+		  
+		  <section>
+		  <h2>Inne agilopodobne</h2>
+Lean
+Kanban (WIP)
+RUP
+XP (eXtreme programming)
+(…)
 
-          <section>
-            <h2>Agile <small>vs</small> Waterfall</h2>
-            <ul>
-              <li>Łatwość wprowadzania zmian</li>
-              <li>Szybka adaptacja</li>
-              <li>Większa kontrola nad ryzykiem</li>
-              <li>Szybciej dostarczamy wartość</li>
-              <li>Dostarczony produkt jest bliższy oczekiwaniom</li>
-            </ul>
+http://www.crisp.se/file-uploads/Kanban-vs-Scrum.pdf
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-              </ul>
-            </aside>
+XP (eXtreme programming) is pretty prescriptive compared to Scrum. It includes most of Scrum + a 
+bunch of fairly specific engineering practices such as test-driven development and pair programming. 
 
-          </section>
+One of the main differences between Scrum and RUP is that in RUP you get too much, and you are 
+supposed to remove the stuff you don’t need. In Scrum you get too little, and you are supposed to 
+add the stuff that is missing
+
+		  </section>
+		  
+		  <section>
+		  <h2>lean</h2>
+		  </section>
+		  
+		  <section>
+		  <h2>xp</h2>
+		  </section>
+		  
+		  <section>
+		  scrum
+		  </section>
+		  
+		  <section>
+		   <h2>Definition of “Done”</h2>
+		  </section>
+
+
 
           <section class = "theory">
             <h1>Zespół Agile</h1>
 
             <img class="huge" src="img/AgileTeam.jpg" alt="Zespół Agile" />
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Product Owner - Product Owner (Właściciel Produktu) - odpowiada za określenie wizji produktu i nadzór nad jego rozwojem. Pełni kluczową rolę w prowadzeniu projektu w metodykach tzw. zwinnych, gdzie odpowiada za określenie wymagań funkcjonalnych produktu oraz określa priorytety ich tworzenia. Na bieżąco współpracuje z zespołem developerskim (programistami, grafikami, specjalistami od interfejsu graficznego (UX), itd.) w realizacji kolejnych wersji produktu.
-                </li>
-              </ul>
-            </aside>
           </section>
 
           <section>
@@ -366,27 +396,26 @@
               <li>Brak czasu na ręczne testy regresji</li>
             </ul>
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-              </ul>
-            </aside>
           </section>
 
+		            <section>
+            <h2>Agile <small>vs</small> Waterfall</h2>
+            <ul>
+              <li>Łatwość wprowadzania zmian</li>
+              <li>Szybka adaptacja</li>
+              <li>Większa kontrola nad ryzykiem</li>
+              <li>Szybciej dostarczamy wartość</li>
+              <li>Dostarczony produkt jest bliższy oczekiwaniom</li>
+            </ul>
+
+          </section>
+		  
         </section>
 
         <section>
 
           <section class="theory">
             <h2>Kiedy zacząć testowanie?</h2>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>0 minut</time></li>
-              </ul>
-            </aside>
 
           </section>
 
@@ -412,6 +441,7 @@
         <section>
 
           <section class="theory">
+			<h1>1h - wprowadzenie user story, bdd itp. - plynne przejscie do warsztatu </h1>
             <h2><em>Pracujemy w Agile</em></h2>
             <h3>Pracujemy z klientem</h3>
 
@@ -562,6 +592,16 @@
               <li>Produkt powinien być podłączony do prądu</li>
               <li>Produkt powinien opiekać z góry i z dołu</li>
             </ul>
+			
+			Czy macie wymagania?
+W jakiej postaci?
+Jak doprecyzowujecie
+Jak testujecie?
+
+User stories should only provide enough detail to make a reasonably low risk estimate of how long the story will take to implement. When the time comes to implement the story developers will go to the customer and receive a detailed description of the requirements face to face.
+
+User Stories are a simple way of capturing user requirements throughout a project – an alternative to writing lengthy requirements specifications all up-front. - See more at: http://www.allaboutagile.com/writing-good-user-stories/#sthash.I602RIg2.dpuf
+
 
             <img class="fragment" src="img/Oven.jpg" alt="Piekarnik" />
 
@@ -578,7 +618,65 @@
               </ul>
             </aside>
           </section>
+		  
+		  <section>
+		  <h2>mądry cytat</h2>
+		  </section>
 
+		  <section>
+		  <h2>Wymagania - User story</h2>
+
+Independent
+Negotiable
+Valuable
+Estimatable
+Small
+Testable
+
+
+Independent. Reduced dependencies  = easier to plan = We want to be able to develop in any sequence.
+Negotiable. Details added via collaboration
+Valuable. Provides value to the customer
+Estimable. Too big or too vague = not estimable
+Small. Can be done in less than a week by the team
+Testable. Good acceptance criteria
+
+
+
+INVEST
+	Independent
+		logging and transaction feature could be separated
+	Negotiable
+		Not to much details
+		Works as reminder
+		Details in acceptance criteria examples
+	Valuable
+		For bussines not for dev/QA
+	Estimable
+	Small
+		To put into interation
+	Testable
+Small
+	To put into interation
+Testable
+
+
+Negotiable… and Negotiated
+A good story is negotiable. It is not an explicit contract for features; rather, details will be co-created by the customer and programmer during development. A good story captures the essence, not the details. Over time, the card may acquire notes, test ideas, and so on, but we don't need these to prioritize or schedule stories
+
+
+Testable
+A good story is testable. Writing a story card carries an implicit promise: "I understand what I want well enough that I could write a test for it." Several teams have reported that by requiring customer tests before implementing a story, the team is more productive. "Testability" has always been a characteristic of good requirements; actually writing the tests early helps us know whether this goal is met.
+If a customer doesn't know how to test something, this may indicate that the story isn't clear enough, or that it doesn't reflect something valuable to them, or that the customer just needs help in testing.
+A team can treat non-functional requirements (such as performance and usability) as things that need to be tested. Figure out how to operationalize these tests will help the team learn the true needs.
+
+
+		  </section>
+		  
+		  <section>
+		  typowe błędy
+		  </section>
+		  
           <section>
             <h2>Wymagania <small>vs</small> <em>user story</em></h2>
 
@@ -1104,30 +1202,6 @@
 
             <div class="svg-placeholder"></div>
 
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KORNEL</li>
-                <li><time>5 minut</time></li>
-                <li>
-                  Autorem tego pojęcia jest Mike Cohn, opisał on go w książce "Succeeding with Agile".
-                </li>
-                <li>
-                  Jest to rodzaj wizualnej reprezentacji rozmiaru i ilości testów, w zależności od ich stopnia skomplikowania, wyrażonego za pomocą poziomo piramidy (im wyżej, tym większy stopień skomplikowania i mniejsza możliwość manewru).
-                </li>
-                <li>
-                  Im testy bardziej skomplikowane i włączające więcej warstw, tym mniej ich powinno być (koszt utrzymania przeważa nad zyskiem z ich automatyzacji).
-                </li>
-                <li>
-                  Wiele scenariuszy testowych obarczonych jest problemem "skomplikowania przez GUI."
-                </li>
-                <li>
-                  Prezentacja palcem - konsekwencje prób testowania niskich warstw piramidy testami wysokopoziomowymi. Trzeba przebić się przez wszystkie warstwy pośrednie, z których każda wprowadza komplikacje.
-                </li>
-                <li>
-                  Warto pamiętać również o tym, że na im wyższym poziomie wykonany zostanie test, tym więcej przypadków i zestawów danych należy przygotować (multiplikacja przypadków testowych).
-                </li>
-              </ul>
-            </aside>
           </section>
 
           <section>
@@ -1157,6 +1231,18 @@
               </ul>
             </aside>
           </section>
+		  
+		  <section>
+			<h1> Odwrotna piramida </h1>
+			<img class="big white-background" src="img/odwrotna_piramida.png" alt="Odwrócona piramida" />
+		  </section>
+		  
+		  <section>
+		      <h1>Architektura testów</h1>
+			  <p> Multi layer architecture</p>
+			  <img class="big white-background" src="img/multi_layer_architecture.png" alt="Multi layer architecture" />
+
+		  </section>
 
         </section>
 
@@ -1226,6 +1312,10 @@
               </ul>
             </aside>
           </section>
+		  
+		  <section>
+		  <h2>cykl ATDD</h2>
+		  </section>
 
         </section>
 
@@ -1283,6 +1373,10 @@
               </ul>
             </aside>
           </section>
+		  
+		  <section>
+		  <h2>cykl bdd</h2>
+		  </section>
 
           <section>
             <h2>Story BDD</h2>
@@ -1817,6 +1911,111 @@ THEN ... weryfikacja</code></pre>
           </section>
 
         </section>
+
+		
+		<section>
+
+          <section>
+            <h1>15 - min Skryptowanie środowiska</h1>
+
+          </section>
+
+        </section>
+		
+        <section>
+
+        <section>
+            <h1>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h1>
+		</section>
+		
+		<section>
+			<h2>Cele testowania A typy testów </h2>
+			
+			<img class="big white-background" src="img/agile_testing_quadrants.png" alt="Rola QA" />
+			Ćwiczenie 3 – pokładaj karteczki do dobrych kwadratów
+			Chmurki – automated/manual/tools
+		</section>
+		
+		<section>
+			<h2>Role w zespole?</h2>
+			<img class="big white-background" src="img/agile_testing_quadrants2.png" alt="Rola QA" />
+		</section>
+		
+		<section>
+			<h2>Rola QA - Indetyfikacja wartości</h2>
+			Provide continuous feedback. 
+			Deliver value to the customer.
+			Enable face-to-face communication.
+			Have courage.
+			Keep it simple.
+			Practice continuous improvement.
+			Respond to change. 
+			Self-organize.
+			Focus on people.
+			Enjoy.
+
+			Notes:
+			Rola QA
+			Ćwiczenie 2
+
+		</section>
+		
+		<section>
+			<h2>Rola QA</h2>
+			<img class="big white-background" src="img/interaction_of_roles.png" alt="Rola QA" />
+		</section>
+		
+		<section>
+			<h2>Rola QA - kierunki</h2>
+			<img class="big white-background" src="img/sherlock.png" alt="Detektyw" />
+		</section>
+		
+		<section>
+			<p>
+			Testing craftmanship
+			Testing Dojos
+			Programming Katas
+			Exploratory testing
+			XP pracites
+			Learn new language/new framework
+			Test design, code design, design patterns
+			…?</p>
+		</section>
+
+			<section>
+			Exploratory testing
+			Learn about the product
+			Learn about the market
+			Learn about the ways the product could fail
+			Learn about the weaknesses of the product
+			Learn about how to test the product
+			Test the product
+			Report the problems
+			Advocate for repairs
+			Develop new tests based on what you have learned so far
+			http://msdn.microsoft.com/en-us/library/jj620911.aspx
+			http://www.satisfice.com/tools/htsm.pdf
+			http://www.satisfice.com/tools/procedure.pdf
+
+
+			Exploratory testing is central to this quadrant. During exploratory testing
+			sessions, the tester simultaneously designs and performs tests, using critical
+			thinking to analyze the results. This offers a much better opportunity to learn
+			about the application than scripted tests. We’re not talking about ad hoc testing, which is impromptu and improvised. Exploratory testing is a more
+			thoughtful and sophisticated approach than ad hoc testing. It is guided by a
+			strategy and operates within defined constraints. From the start of each
+			project and story, testers start thinking of scenarios they want to try. As small
+			chunks of testable code become available, testers analyze test results, and as
+			they learn, they find new areas to explore. Exploratory testing works the system in the same ways that the end users will. Testers use their creativity and
+			intuition. As a result, it is through this type of testing that many of the most
+			serious bugs are usually found. 
+
+			</section>
+
+          
+
+        </section>
+
 
         <section>
 
