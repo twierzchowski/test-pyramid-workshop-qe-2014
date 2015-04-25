@@ -6,7 +6,7 @@
       Agile QA - Pragmatyczne zapewnianie jakości
     </title>
 
-    <meta name="author" content="Korneliusz Caputa, Wojciech Gawroński, Kamila Kupidura" />
+    <meta name="author" content="Korneliusz Caputa, Wojciech Gawroński, Kamila Kupidura, Daniel Dec, Tomasz Wierzchowski" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -207,7 +207,7 @@
     <div class="reveal">
       <div class="slides">
 
-        <section>
+        <section id="intro">
           <h1>Agile QA</h1>
           <h3>Pragmatyczne zapewnianie jakości</h3>
           <span class="license">
@@ -222,7 +222,7 @@
                 <h2>Testy oprogramowania</h2>
             </section>
             
-            <section>
+            <section class="theory">
                 <h2>Mam plan</h2>
                 <ul>
                     <li>Chaos</li>
@@ -245,8 +245,8 @@
                     <li>Zarządzanie błędami</li>
                     <li>Metryki (kryteria akceptacji)</li>
                 </ul>
-notes:
-<p>Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
+<aside class="notes">
+Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
 Is a story which tells how we are going to test - there could be many stories
 Product-specific (but generic is also good)
 Strategy guides test design
@@ -276,7 +276,7 @@ First version is always wrong
 	Learn about the product
 	Strategy evolves
 	Risk might change
-</p>
+</aside>
 		  </section>
 		  
             <section>
@@ -341,7 +341,7 @@ First version is always wrong
 <li>RUP</li>
 <li>XP (eXtreme programming)</li>
 <li>(…)</li>
-
+<aside class="notes">
 http://www.crisp.se/file-uploads/Kanban-vs-Scrum.pdf
 
 XP (eXtreme programming) is pretty prescriptive compared to Scrum. It includes most of Scrum + a 
@@ -350,7 +350,7 @@ bunch of fairly specific engineering practices such as test-driven development a
 One of the main differences between Scrum and RUP is that in RUP you get too much, and you are 
 supposed to remove the stuff you don’t need. In Scrum you get too little, and you are supposed to 
 add the stuff that is missing
-
+</aside>
 		  </section>
 		  
 		  <section>
@@ -584,7 +584,8 @@ add the stuff that is missing
               <li>Produkt powinien być podłączony do prądu</li>
               <li>Produkt powinien opiekać z góry i z dołu</li>
             </ul>
-			
+
+            <aside class="notes">
 			Czy macie wymagania?
 W jakiej postaci?
 Jak doprecyzowujecie
@@ -593,7 +594,7 @@ Jak testujecie?
 User stories should only provide enough detail to make a reasonably low risk estimate of how long the story will take to implement. When the time comes to implement the story developers will go to the customer and receive a detailed description of the requirements face to face.
 
 User Stories are a simple way of capturing user requirements throughout a project – an alternative to writing lengthy requirements specifications all up-front. - See more at: http://www.allaboutagile.com/writing-good-user-stories/#sthash.I602RIg2.dpuf
-
+            </aside>
 
             <img class="fragment" src="img/Oven.jpg" alt="Piekarnik" />
 
@@ -625,7 +626,7 @@ User Stories are a simple way of capturing user requirements throughout a projec
             <li>Small</li>
             <li>Testable</li>
             </ul>
-
+<aside class="notes">
 Independent. Reduced dependencies  = easier to plan = We want to be able to develop in any sequence.
 Negotiable. Details added via collaboration
 Valuable. Provides value to the customer
@@ -662,7 +663,7 @@ A good story is testable. Writing a story card carries an implicit promise: "I 
 If a customer doesn't know how to test something, this may indicate that the story isn't clear enough, or that it doesn't reflect something valuable to them, or that the customer just needs help in testing.
 A team can treat non-functional requirements (such as performance and usability) as things that need to be tested. Figure out how to operationalize these tests will help the team learn the true needs.
 
-
+</aside>
 		  </section>
 		  
 		  <section>
@@ -1933,44 +1934,46 @@ THEN ... weryfikacja</code></pre>
             </ul>
           </section>
         </section>
-		
+
         <section>
 
             <section>
-                <h1>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h1>
+                <h2>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h2>
             </section>
-		<section>
-			<h2>Cele testowania A typy testów </h2>
-			
-			<img class="big white-background" src="img/agile_testing_quadrants.png" alt="Rola QA" />
-			<p>Ćwiczenie 3 – pokładaj karteczki do dobrych kwadratów</p>
-        <p>Chmurki – automated/manual/tools</p>
-		</section>
-		
-		<section>
-			<h2>Role w zespole?</h2>
-			<img class="big white-background" src="img/agile_testing_quadrants2.png" alt="Rola QA" />
-		</section>
-		
-		<section>
-			<h2>Rola QA - Indetyfikacja wartości</h2>
-			<ul>
-            <li>Provide continuous feedback.</li>
-			<li>Deliver value to the customer.</li>
-			<li>Enable face-to-face communication.</li>
-			<li>Have courage.</li>
-			<li>Keep it simple.</li>
-			<li>Practice continuous improvement.</li>
-			<li>Respond to change.</li>
-			<li>Self-organize.</li>
-			<li>Focus on people.</li>
-			<li>Enjoy.</li>
-            </ul>
-			Notes:
-			Rola QA
-			Ćwiczenie 2
+            <section>
+                <h2>Cele testowania A typy testów </h2>
+                
+                <img class="big white-background" src="img/agile_testing_quadrants.png" alt="Rola QA" />
+            <aside class="notes">
+                <p>Ćwiczenie 3 – pokładaj karteczki do dobrych kwadratów</p>
+                <p>Chmurki – automated/manual/tools</p>
+            </aside>
+            </section>
 
-		</section>
+            <section>
+                <h2>Role w zespole?</h2>
+                <img class="big white-background" src="img/agile_testing_quadrants2.png" alt="Rola QA" />
+            </section>
+
+            <section>
+                <h2>Rola QA - Indetyfikacja wartości</h2>
+                <ul>
+                <li>Provide continuous feedback.</li>
+                <li>Deliver value to the customer.</li>
+                <li>Enable face-to-face communication.</li>
+                <li>Have courage.</li>
+                <li>Keep it simple.</li>
+                <li>Practice continuous improvement.</li>
+                <li>Respond to change.</li>
+                <li>Self-organize.</li>
+                <li>Focus on people.</li>
+                <li>Enjoy.</li>
+                </ul>
+                <aside class="notes">
+                Rola QA
+                Ćwiczenie 2
+                </aside>
+            </section>
 		
 		<section>
 			<h2>Rola QA</h2>
@@ -1996,7 +1999,7 @@ THEN ... weryfikacja</code></pre>
 		</section>
 
 			<section>
-			Exploratory testing
+			<h2>Exploratory testing</h2>
 			Learn about the product
 			Learn about the market
 			Learn about the ways the product could fail
@@ -2010,7 +2013,7 @@ THEN ... weryfikacja</code></pre>
 			http://www.satisfice.com/tools/htsm.pdf
 			http://www.satisfice.com/tools/procedure.pdf
 
-
+<aside class="notes">
 			Exploratory testing is central to this quadrant. During exploratory testing
 			sessions, the tester simultaneously designs and performs tests, using critical
 			thinking to analyze the results. This offers a much better opportunity to learn
@@ -2022,7 +2025,7 @@ THEN ... weryfikacja</code></pre>
 			they learn, they find new areas to explore. Exploratory testing works the system in the same ways that the end users will. Testers use their creativity and
 			intuition. As a result, it is through this type of testing that many of the most
 			serious bugs are usually found. 
-
+</aside>
 			</section>
 
           
@@ -2079,56 +2082,6 @@ THEN ... weryfikacja</code></pre>
                 </a>
               </li>
             </ul>
-
-            <article class="nicer-container">
-              <h4><em>Zdjęcia: </em></h4>
-
-              <ul class="links">
-                <li>
-                  <a href="http://media-cache-ak0.pinimg.com/736x/df/3d/c9/df3dc94ebd8c1c424a1b4297b8881b2e.jpg">
-                    ScrumBay
-                  </a>,
-                  <a href="http://analizait.pl/wp-content/uploads/2012/08/modelKaskadowy.png">
-                    Waterfall
-                  </a>,
-                  <a href="http://manojjaggavarapu.files.wordpress.com/2012/07/redgreenrefacor.png">
-                    TDD Cycle
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.fitnesse.org">Fitnesse</a>, <a href="http://docs.seleniumhq.org">Selenium</a>
-                </li>
-                <li>
-                  <a href="http://4.bp.blogspot.com/_5q3g5rw4GBI/TFA1MnCDkZI/AAAAAAAAAAM/2IHEbv_YUHk/s1600/whitebox.jpg">White box</a>,
-                  <a href="http://johnkoessler.files.wordpress.com/2014/04/blackbox2.jpg">Black box</a>
-                </li>
-                <li>
-                  <a href="http://www.romanpichler.com/wp-content/uploads/2011/10/CustomerProxyPorductOwner.jpg">
-                    Agile Team
-                  </a>,
-                  <a href="http://butlerhouse.net/wp-content/uploads/2011/11/fishermans-agile-ux.jpg">
-                    Agile + UCD
-                  </a>,
-                  <a href="http://johnnyholland.org/wp-content/uploads/flow.jpg">
-                    Agile + UCD - Phases
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.suresystems.ca/wp-content/uploads/2014/01/iStock_000009905028Large.jpg">
-                    Małpa
-                  </a>,
-                  <a href="http://blogi.polskatimes.pl/zyskiistraty/wp-content/uploads/sites/22/2014/04/Dobromir2.jpg">
-                    Pomysłowy Dobromir
-                  </a>,
-                  <a href="http://www.pasaz.v10.pl/img/thumbs/p/93/b8/93b8a0c3a3a92c77e892b2427ae1fb33.jpg">
-                    Piekarnik
-                  </a>,
-                  <a href="http://ek.ua/jpg_zoom1/133466.jpg">
-                    Toster
-                  </a>
-                </li>
-              </ul>
-            </article>
           </section>
 
         </section>

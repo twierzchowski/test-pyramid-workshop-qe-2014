@@ -23,9 +23,12 @@ Vagrant.configure(2) do |config|
   
   config.vm.provision "shell", inline: "choco install ruby1.9 -y"
   config.vm.provision "shell", inline: "choco install ruby.devkit -y"
+  config.vm.provision "shell", inline: "choco install nodejs -y"
   config.vm.provision "shell", inline: "choco install cmder -y"
   config.vm.provision "shell", inline: "choco install firefox -y"
-  config.vm.provision "shell", inline: "choco install nodejs -y"
-  config.vm.provision "shell", inline: "Start-Process \"c:\\tools\\Ruby193\\bin\\gem.bat\"   \"install bundler\""
-  config.vm.provision "shell", inline: "Start-Process \"c:\\tools\\Ruby193\\bin\\gem.bat\"   \"update --system\""
+  config.vm.provision "shell", inline: "Restart-Computer -Force"
+  config.vm.provision "shell", inline: "npm install bower -g"
+  config.vm.provision "shell", inline: "gem install bundler"
+  config.vm.provision "shell", inline: "gem update --system"
+  config.vm.provision "shell", inline: "NET USE z:  \\\\vboxsrv\\vagrant"
 end
