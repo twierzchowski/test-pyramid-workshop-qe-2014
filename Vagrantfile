@@ -26,7 +26,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: "choco install nodejs -y"
   config.vm.provision "shell", inline: "choco install cmder -y"
   config.vm.provision "shell", inline: "choco install firefox -y"
-  config.vm.provision "shell", inline: "choco install sublimetext2"
+  config.vm.provision "shell", inline: "choco install sublimetext2 -y"
   config.vm.provision "shell", inline: "Restart-Computer -Force"
   config.vm.provision "shell", inline: "npm install bower -g"
   config.vm.provision "shell", inline: "gem install bundler"
