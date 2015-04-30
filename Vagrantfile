@@ -28,8 +28,10 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: "choco install firefox -y"
   config.vm.provision "shell", inline: "choco install sublimetext2 -y"
   config.vm.provision "shell", inline: "Restart-Computer -Force"
+  config.vm.provision "shell", inline: "C:\\tools\\cmder\\vendor\\msysgit\\bin\\git.exe clone git://github.com/drewda/cucumber-sublime-bundle.git 'C:\\Users\\IEUser\\AppData\\Roaming\\Sublime Text 2\\Packages\\Cucumber'"
   config.vm.provision "shell", inline: "npm install bower -g"
   config.vm.provision "shell", inline: "gem install bundler"
   config.vm.provision "shell", inline: "gem update --system"
   config.vm.provision "shell", inline: "NET USE z:  \\\\vboxsrv\\vagrant"
+
 end
