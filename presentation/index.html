@@ -6,7 +6,8 @@
       Agile QA - Pragmatyczne zapewnianie jakości
     </title>
 
-    <meta name="author" content="Korneliusz Caputa, Wojciech Gawroński, Kamila Kupidura" />
+    <meta name="author"
+          content="Korneliusz Caputa, Wojciech Gawroński, Kamila Kupidura, Daniel Dec, Tomasz Wierzchowski" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -206,87 +207,96 @@
   <body>
     <div class="reveal">
       <div class="slides">
-
-        <section>
+        <section id="intro">
           <h1>Agile QA</h1>
           <h3>Pragmatyczne zapewnianie jakości</h3>
+          <h4>2015</h4>
           <span class="license">
             License:
             <a href="http://creativecommons.org/licenses/by-nd/3.0/pl/">CC BY-ND 3.0 PL</a>
           </span>
         </section>
 
-        <section>
-            <section class="theory">
-                <h1>1h - test plany, strategie, metodyki </h1>
-                <h2>Testy oprogramowania</h2>
-            </section>
-
-            <section class="theory">
-            <h1>Waterfall</h1>
-
-            <img class="huge" src="img/Waterfall.png" alt="Waterfall" />
-
+        <section id="test_plan">
+          <section class="theory">
+            <h1>1h - test plany, strategie, metodyki </h1>
+            <h2>Testy oprogramowania</h2>
           </section>
 
-      <section>
-        <h2>Waterfall i inne</h2>
-      <img class="huge" src="img/Waterfall_inne.png" alt="Waterfall" />
-      </section>
+          <section class="theory">
+            <h1>Waterfall</h1>
+            <img class="huge" src="img/Waterfall.png" alt="Waterfall" />
+          </section>
+
+          <section class="theory">
+            <h2>Waterfall i inne</h2>
+            <img class="huge" src="img/Waterfall_inne.png" alt="Waterfall" />
+          </section>
 
           <section class="theory">
             <h1>Agile</h1>
             <img class="big" src="img/Agile.jpg" alt="Agile" />
-
-          </section>
-
-      <section>
-      <h2>Inne agilopodobne</h2>
-            <ul>
-            <li>Lean</li>
-            <li>Kanban (WIP)</li>
-            <li>RUP</li>
-            <li>XP (eXtreme programming)</li>
-            <li>(…)</li>
-
-           <aside class="notes">
-            <p>http://www.crisp.se/file-uploads/Kanban-vs-Scrum.pdf
-
-              XP (eXtreme programming) is pretty prescriptive compared to Scrum. It includes most of Scrum + a bunch of fairly specific engineering practices such as test-driven development and pair programming.
-
-              One of the main differences between Scrum and RUP is that in RUP you get too much, and you are supposed to remove the stuff you don’t need. In Scrum you get too little, and you are supposed to add the stuff that is missing</p>
-            </aside>
-      </section>
-
-      <section>
-      <h2>lean</h2>
-      </section>
-
-      <section>
-      <h2>xp</h2>
-      </section>
-
-      <section>
-      <h2>scrum</h2>
-      </section>
-
-          <section class = "theory">
-            <h2>Zespół Scrumowy</h2>
-
-            <img class="huge" src="img/AgileTeam.jpg" alt="Zespół Agile" />
-
           </section>
 
           <section class="theory">
-              <h1>Tester?</h1>
-              <img class="left space-right" src="img/Monkey.jpg" alt="Tester małpa ;)" />
-              <img height="295" width="369" class="right" src="img/Dobromir.jpg" alt="Tester pomysłowy ;)" />
-            </section>
+            <h2>Inne agilopodobne</h2>
+            <ul>
+              <li>Lean</li>
+              <li>Kanban (WIP)</li>
+              <li>RUP</li>
+              <li>XP (eXtreme programming)</li>
+              <li>(…)</li>
+            </ul>
 
+            <aside class="notes">
+              <p>
+                http://www.crisp.se/file-uploads/Kanban-vs-Scrum.pdf
 
-          <section>
+                XP (eXtreme programming) is pretty prescriptive compared to Scrum. It includes most of Scrum + a bunch of fairly specific engineering practices such as test-driven development and pair programming.
+
+                One of the main differences between Scrum and RUP is that in RUP you get too much, and you are supposed to remove the stuff you don’t need. In Scrum you get too little, and you are supposed to add the stuff that is missing
+              </p>
+            </aside>
+          </section>
+
+          <section class="theory">
+            <h2>Lean</h2>
+            <h3>
+              <q>Think big, act small, fail fast, learn rapidly</q>
+            </h3>
+            <ul>
+              <li>Eliminate Waste</li>
+              <li>Build Quality In</li>
+              <li>Create Knowledge</li>
+              <li>Defer Commitment</li>
+              <li>Deliver Fast</li>
+              <li>Respect People</li>
+              <li>Optimize the Whole</li>
+            </ul>
+          </section>
+
+          <section class="theory">
+            <h2>xp</h2>
+            <img class="big" src="img/xp.png" alt="Extreme programming" />
+          </section>
+
+          <section class="theory">
+            <h2>scrum</h2>
+          </section>
+
+          <section class="theory">
+            <h2>Zespół Scrumowy</h2>
+            <img class="huge" src="img/AgileTeam.jpg" alt="Zespół Agile" />
+          </section>
+
+          <section class="theory">
+            <h1>Tester?</h1>
+            <img class="left space-right" src="img/Monkey.jpg" alt="Tester małpa ;)" />
+            <img height="295" width="369" class="right" src="img/Dobromir.jpg" alt="Tester pomysłowy ;)" />
+          </section>
+
+          <section class="theory">
             <h2>Rola i oczekiwania wobec testera</h2>
-
             <ul>
               <li>Każdy dba o jakość</li>
               <li>Testowanie jest ciągłe</li>
@@ -298,8 +308,7 @@
 
           </section>
 
-
-          <section>
+          <section class="theory">
             <h2>Agile <small>vs</small> Waterfall</h2>
             <ul>
               <li>Łatwość wprowadzania zmian</li>
@@ -308,12 +317,10 @@
               <li>Szybciej dostarczamy wartość</li>
               <li>Dostarczony produkt jest bliższy oczekiwaniom</li>
             </ul>
-
           </section>
 
           <section class="theory">
             <h2>Kiedy zacząć testowanie?</h2>
-
           </section>
 
           <section class="theory">
@@ -331,106 +338,109 @@
                 <li><time>1 minuty</time></li>
               </ul>
             </aside>
-        </section>
-
-            <section>
-                <h2>Mam plan</h2>
-                <ul>
-                    <li>Chaos</li>
-                    <li>Zwinnie czyli chaos</li>
-                    <li>Nie mamy planu</li>
-                    <li>Nie wiem</li>
-                    <li>Był plan ale porzuciliśmy go</li>
-                    <li>Wszystko się zmienia więc nie warto planować</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Testing strategy – Test Plan</h2>
-                <ul>
-                    <li>Przewodnik, wizja</li>
-                    <li>Jak i kiedy</li>
-                    <li>Zakres</li>
-                    <li>Typy i poziomy testów (kryteria wy/we)</li>
-                    <li>Środowiska</li>
-                    <li>Zarządzanie błędami</li>
-                    <li>Metryki (kryteria akceptacji)</li>
-                </ul>
-
-              <aside class="notes">
-                  <p>Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
-                          Is a story which tells how we are going to test - there could be many stories
-                          Product-specific (but generic is also good)
-                          Strategy guides test design
-                          Why bother?
-                          Who cares?
-                          How much?
-                          Risk-focused
-                          Strategy vs Test Plan
-                          Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
-                          Test Strategy
-                          Strategy guides test design
-                          Why bother?
-                          Who cares?
-                          How much?
-                          Is a story which tells how we are going to test - there could be many stories
-                          Product-specific (but generic is also good)
-                          Risk-focused
-                          Diversiffied
-                          Practical
-                          First version is always wrong
-                          Learn about the product
-                          Strategy evolves
-                          Risk might change
-                          Diversiffied
-                          Practical
-                          First version is always wrong
-                          Learn about the product
-                          Strategy evolves
-                          Risk might change
-                    </p>
-                </aside>
           </section>
 
-            <section>
-                <h2>Test Plan</h2>
-                <ul>
-                    <li>Estymacje i harmonogram</li>
-                    <li>Przypadki testowe</li>
-                    <li>Dane</li>
-                    <li>Konkretne narzędzia</li>
-                    <li>Role i odpowiedzialności</li>
-                    <li>Artefakty</li>
-                    <li>Raportowanie wyników</li>
-                </ul>
-            </section>
+          <section class="theory">
+            <h2>Mam plan</h2>
+            <ul>
+              <li>Chaos</li>
+              <li>Zwinnie czyli chaos</li>
+              <li>Nie mamy planu</li>
+              <li>Nie wiem</li>
+              <li>Był plan ale porzuciliśmy go</li>
+              <li>Wszystko się zmienia więc nie warto planować</li>
+            </ul>
+          </section>
 
-            <section>
+          <section class="theory">
+            <h2>Testing strategy – Test Plan</h2>
+            <ul>
+              <li>Przewodnik, wizja</li>
+              <li>Jak i kiedy</li>
+              <li>Zakres</li>
+              <li>Typy i poziomy testów (kryteria wy/we)</li>
+              <li>Środowiska</li>
+              <li>Zarządzanie błędami</li>
+              <li>Metryki (kryteria akceptacji)</li>
+            </ul>
+
+            <aside class="notes">
+              <p>
+                Jak już mamy wybra ć to lepiej jest mieć strategię, nakieruje nas na właściwe tory
+                Is a story which tells how we are going to test - there could be many stories
+                Product-specific (but generic is also good)
+                Strategy guides test design
+                Why bother?
+                Who cares?
+                How much?
+                Risk-focused
+                Strategy vs Test Plan
+                Jak już mamy wybrać to lepiej jest mieć strategię, nakieruje nas na właściwe tory
+                Test Strategy
+                Strategy guides test design
+                Why bother?
+                Who cares?
+                How much?
+                Is a story which tells how we are going to test - there could be many stories
+                Product-specific (but generic is also good)
+                Risk-focused
+                Diversiffied
+                Practical
+                First version is always wrong
+                Learn about the product
+                Strategy evolves
+                Risk might change
+                Diversiffied
+                Practical
+                First version is always wrong
+                Learn about the product
+                Strategy evolves
+                Risk might change
+              </p>
+            </aside>
+          </section>
+
+          <section class="theory">
+            <h2>Test Plan</h2>
+            <ul>
+              <li>Estymacje i harmonogram</li>
+              <li>Przypadki testowe</li>
+              <li>Dane</li>
+              <li>Konkretne narzędzia</li>
+              <li>Role i odpowiedzialności</li>
+              <li>Artefakty</li>
+              <li>Raportowanie wyników</li>
+            </ul>
+          </section>
+
+          <section class="theory">
             <h2>Testing strategy – Test Plan</h2>
             Przykłady
-            </section>
+          </section>
 
-            <section>
-                <h2>Testing strategy – Test Plan - pułapki</h2>
-                <ul>
-                    <li>Ślepe i bezmyślne trzymanie się planu</li>
-                    <li>Armata na wróbla i zbyt ambitny (prawo)</li>
-                    <li>Zbyt detaliczny -> koszty utrzymania</li>
-                </ul>
+          <section class="theory">
+            <h2>Testing strategy – Test Plan - pułapki</h2>
+            <ul>
+              <li>Ślepe i bezmyślne trzymanie się planu</li>
+              <li>Armata na wróbla i zbyt ambitny (prawo)</li>
+              <li>Zbyt detaliczny -> koszty utrzymania</li>
+            </ul>
 
-                <br/><br/>
-                <q>
-                  Time spend on documenting is time<br/>not spent on testing
-                </q>
-                <small>J. Bach</small>
-            </section>
+            <br/><br/>
+            <q>
+              Time spend on documenting is time<br/>not spent on testing
+            </q>
+            <small>J. Bach</small>
+          </section>
 
         </section>
 
-        <section>
+        <section id="user_story">
+          <section>
+            <h1>1h - wprowadzenie user story, bdd itp. - plynne przejscie do warsztatu </h1>
+          </section>
 
           <section class="theory">
-      <h1>1h - wprowadzenie user story, bdd itp. - plynne przejscie do warsztatu </h1>
             <h2><em>Pracujemy w Agile</em></h2>
             <h3>Pracujemy z klientem</h3>
 
@@ -472,7 +482,7 @@
             </aside>
           </section>
 
-          <section>
+          <section class="theory">
             <h2>Co dostarcza <em>UCD</em>?</h2>
 
             <div>Informację, do czego system ma służyć</div>
@@ -487,7 +497,7 @@
             </aside>
           </section>
 
-          <section>
+          <section class="theory">
             <h2>Persona</h2>
 
             <ul>
@@ -506,7 +516,7 @@
             </aside>
           </section>
 
-          <section>
+          <section class="theory">
             <h2>Korzyści posiadania <em>persony</em></h2>
 
             <ul>
@@ -524,7 +534,7 @@
             </aside>
           </section>
 
-          <section>
+          <section class="theory">
             <h2><em>User Story</em></h2>
 
             <ul>
@@ -565,7 +575,7 @@
             </aside>
           </section>
 
-      <section>
+          <section>
             <h2>Wymagania <small>vs</small> <em>user story</em></h2>
 
             <ul>
@@ -574,24 +584,23 @@
               <li>Produkt powinien opiekać z góry i z dołu</li>
             </ul>
 
-      <aside class="notes">
-        <p>Czy macie wymagania?
-            W jakiej postaci?
-            Jak doprecyzowujecie
-            Jak testujecie?
+            <aside class="notes">
+              <p>
+                Czy macie wymagania?
+                W jakiej postaci?
+                Jak doprecyzowujecie
+                Jak testujecie?
 
-              User stories should only provide enough detail to make a reasonably low risk estimate of how long the story will take to implement. When the time comes to implement the story developers will go to the customer and receive a detailed description of the requirements face to face.
+                User stories should only provide enough detail to make a reasonably low risk estimate of how long the story will take to implement. When the time comes to implement the story developers will go to the customer and receive a detailed description of the requirements face to face.
 
-              User Stories are a simple way of capturing user requirements throughout a project – an alternative to writing lengthy requirements specifications all up-front. - See more at: http://www.allaboutagile.com/writing-good-user-stories/#sthash.I602RIg2.dpuf
-          </p>
-      </aside>
+                User Stories are a simple way of capturing user requirements throughout a project – an alternative to writing lengthy requirements specifications all up-front. - See more at: http://www.allaboutagile.com/writing-good-user-stories/#sthash.I602RIg2.dpuf
+              </p>
+            </aside>
+          </section>
 
-    </section>
-
-
-    <section>
-      <h3>Czy to jest to czego klient chciał?</h3>
-      <img src="img/Oven.jpg" alt="Piekarnik" />
+          <section class="theory">
+            <h3>Czy to jest to czego klient chciał?</h3>
+            <img src="img/Oven.jpg" alt="Piekarnik" />
 
             <aside class="notes">
               <ul>
@@ -607,102 +616,103 @@
             </aside>
           </section>
 
-      <section>
-      <q>Don’t try to tell the customer what he wants. <br>
-        If you want to be smart, be smart in the shower.<br>
-        Then get out, go to work and serve the customer!</q>
-      <small>Gene Buckley, President Sikorsky Aircraft</small>
-
-      </section>
-
-      <section>
-      <h2>User story</h2>
-      <h3>charakterystyka</h3>
-          <ul>
-            <li>Independent</li>
-            <li>Negotiable</li>
-            <li>Valuable</li>
-            <li>Estimatable</li>
-            <li>Small</li>
-            <li>Testable</li>
-          </ul>
-
-<aside class="notes">
-    <p>
-      Independent. Reduced dependencies  = easier to plan = We want to be able to develop in any sequence.
-      Negotiable. Details added via collaboration
-      Valuable. Provides value to the customer
-      Estimable. Too big or too vague = not estimable
-      Small. Can be done in less than a week by the team
-      Testable. Good acceptance criteria
-    </p>
-    <p>
-      INVEST
-      Independent
-        logging and transaction feature could be separated
-      Negotiable
-        Not to much details
-        Works as reminder
-        Details in acceptance criteria examples
-      Valuable
-        For bussines not for dev/QA
-      Estimable
-      Small
-        To put into interation
-      Testable
-    Small
-      To put into interation
-    Testable
-    </p>
-    <p>
-      Negotiable… and Negotiated
-      A good story is negotiable. It is not an explicit contract for features; rather, details will be co-created by the customer and programmer during development. A good story captures the essence, not the details. Over time, the card may acquire notes, test ideas, and so on, but we don't need these to prioritize or schedule stories
-    </p>
-    <p>
-      Testable
-      A good story is testable. Writing a story card carries an implicit promise: "I understand what I want well enough that I could write a test for it." Several teams have reported that by requiring customer tests before implementing a story, the team is more productive. "Testability" has always been a characteristic of good requirements; actually writing the tests early helps us know whether this goal is met.
-      If a customer doesn't know how to test something, this may indicate that the story isn't clear enough, or that it doesn't reflect something valuable to them, or that the customer just needs help in testing.
-      A team can treat non-functional requirements (such as performance and usability) as things that need to be tested. Figure out how to operationalize these tests will help the team learn the true needs.
-    </p>
-</aside>
-
-      </section>
-
-      <section>
-        <h3>Popełniliśmy typowe błędy!</h3>
-        <h4>Technikalia</h4>
-        <h4>Produkt zamiast doświadczeń użytkownika</h4>
-        <h4>Parametry i cechy zamiast zachowań</h4>
-        <h4>Sugerowanie rozwiązania</h4>
-      </section>
-
           <section>
-            <h2>Wymagania <small>vs</small> <em>user story</em></h2>
-
-            <p>
-              <strong>Jako</strong> Kamila,<br/>
-              <strong>Chcę</strong> zjeść tosta z serem w środku,<br/>
-              <strong>Żeby</strong> zaspokoić głód
-            </p>
-
-            <img class="fragment" src="img/Toaster.jpg" alt="Toster" />
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KAMILA</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Jeśli spojrzymy na to z innej strony, opisując moje wymagania za pomocą historyjki użytkownika, widzimy, że chodziło mi o coś zupełnie innego.
-                </li>
-                <li>
-                  Ten problem rozwiązywany jest przez odpowiednio długi i żmudny proces zbierania wymagań, poparty doświadczeniem. US może dość mocno wpłynąć na jakość zbieranych wymagań i wiedzy na temat produktu, oraz pozwoli przyspieszyć cały proces.
-                </li>
-              </ul>
-            </aside>
-
+            <q>Don’t try to tell the customer what he wants. <br>
+            If you want to be smart, be smart in the shower.<br>
+            Then get out, go to work and serve the customer!</q>
+            <small>Gene Buckley, President Sikorsky Aircraft</small>
           </section>
 
-        </section>
+      <section>
+        <h2>Popełniliśmy typowe błędy!</h2>
+        <ul>
+        <li>Technikalia</li>
+        <li>Produkt zamiast doświadczeń użytkownika</li>
+        <li>Parametry i cechy zamiast zachowań</li>
+        <li>Sugerowanie rozwiązania</li>
+        </ul>
+      </section>
+
+      <section class="theory">
+        <h2>User story</h2>
+        <h3>charakterystyka</h3>
+        <ul>
+          <li>Independent</li>
+          <li>Negotiable</li>
+          <li>Valuable</li>
+          <li>Estimatable</li>
+          <li>Small</li>
+          <li>Testable</li>
+        </ul>
+        <aside class="notes">
+          <p>
+            Independent. Reduced dependencies  = easier to plan = We want to be able to develop in any sequence.
+            Negotiable. Details added via collaboration
+            Valuable. Provides value to the customer
+            Estimable. Too big or too vague = not estimable
+            Small. Can be done in less than a week by the team
+            Testable. Good acceptance criteria
+          </p>
+          <p>
+            INVEST
+            Independent
+              logging and transaction feature could be separated
+            Negotiable
+              Not to much details
+              Works as reminder
+              Details in acceptance criteria examples
+            Valuable
+              For bussines not for dev/QA
+            Estimable
+            Small
+              To put into interation
+            Testable
+          Small
+            To put into interation
+          Testable
+          </p>
+          <p>
+            Negotiable… and Negotiated
+            A good story is negotiable. It is not an explicit contract for features; rather, details will be co-created by the customer and programmer during development. A good story captures the essence, not the details. Over time, the card may acquire notes, test ideas, and so on, but we don't need these to prioritize or schedule stories
+          </p>
+          <p>
+            Testable
+            A good story is testable. Writing a story card carries an implicit promise: "I understand what I want well enough that I could write a test for it." Several teams have reported that by requiring customer tests before implementing a story, the team is more productive. "Testability" has always been a characteristic of good requirements; actually writing the tests early helps us know whether this goal is met.
+            If a customer doesn't know how to test something, this may indicate that the story isn't clear enough, or that it doesn't reflect something valuable to them, or that the customer just needs help in testing.
+            A team can treat non-functional requirements (such as performance and usability) as things that need to be tested. Figure out how to operationalize these tests will help the team learn the true needs.
+          </p>
+        </aside>
+      </section>
+
+
+
+      <section>
+        <h2>Wymagania <small>vs</small> <em>user story</em></h2>
+
+        <p>
+          <strong>Jako</strong> Kamila,<br/>
+          <strong>Chcę</strong> zjeść tosta z serem w środku,<br/>
+          <strong>Żeby</strong> zaspokoić głód
+        </p>
+
+        <img class="fragment" src="img/Toaster.jpg" alt="Toster" />
+
+        <aside class="notes">
+          <ul>
+            <li class="speaker">KAMILA</li>
+            <li><time>2 minuty</time></li>
+            <li>
+              Jeśli spojrzymy na to z innej strony, opisując moje wymagania za pomocą historyjki użytkownika, widzimy, że chodziło mi o coś zupełnie innego.
+            </li>
+            <li>
+              Ten problem rozwiązywany jest przez odpowiednio długi i żmudny proces zbierania wymagań, poparty doświadczeniem. US może dość mocno wpłynąć na jakość zbieranych wymagań i wiedzy na temat produktu, oraz pozwoli przyspieszyć cały proces.
+            </li>
+          </ul>
+        </aside>
+
+      </section>
+
+    </section>
 
         <section>
 
@@ -1196,12 +1206,11 @@
 
         <section>
 
-      <section>
-        <h2>Architektura testów</h2>
-        <p>Multi-layer architecture</p>
-        <img class="big white-background" src="img/multi_layer_architecture.png" alt="Multi layer architecture" />
-
-      </section>
+          <section>
+            <h2>Architektura testów</h2>
+            <p>Multi-layer architecture</p>
+            <img class="big white-background" src="img/multi_layer_architecture.png" alt="Multi layer architecture" />
+          </section>
 
           <section class="theory" data-pyramid="true">
             <h2>Piramida testów</h2>
@@ -1210,15 +1219,14 @@
 
           </section>
 
-      <section>
-      <h2> Odwrotna piramida </h2>
-      <img class="big white-background" src="img/odwrotna_piramida.png" alt="Odwrócona piramida" />
-      </section>
+          <section>
+            <h2> Odwrotna piramida </h2>
+            <img class="big white-background" src="img/odwrotna_piramida.png" alt="Odwrócona piramida" />
+          </section>
 
         </section>
 
         <section>
-
           <section class="theory" data-pyramid="true" data-pyramid-active="2">
             <h2>Acceptance tests</h2>
 
@@ -1564,7 +1572,7 @@ THEN ... weryfikacja</code></pre>
           <section>
             <h2>TDD</h2>
 
-            <img class="big white-background" src="img/TDD.png" alt="TDD Cycle" />
+            <img class="medium white-background" src="img/TDD.png" alt="TDD Cycle" />
 
             <aside class="notes">
               <ul>
@@ -1633,7 +1641,6 @@ THEN ... weryfikacja</code></pre>
 
           <section class="theory" data-pyramid="true" data-pyramid-active="0">
             <h2>Automated GUI tests</h2>
-            <h3><i>Testy automatyczne GUI</i></h3>
 
             <div class="svg-placeholder"></div>
 
@@ -1647,12 +1654,11 @@ THEN ... weryfikacja</code></pre>
 
           <section>
             <h2>Automated GUI tests</h2>
-            <h3><i>Testy automatyczne GUI</i></h3>
 
             <ul>
               <li>Zautomatyzowane scenariusze testowe.</li>
               <li>Nie za dobry stosunek: <strong><sup>KOSZT</sup> / <sub>ZYSK</sub></strong></li>
-              <li>Głównie testy eksploracyjne.</li>
+            <!-- <li>Głównie testy eksploracyjne.</li> WTF?-->
             </ul>
 
             <aside class="notes">
@@ -1739,7 +1745,6 @@ THEN ... weryfikacja</code></pre>
                 <ul>
                   <li><code>/div/label/input</code></li>
                   <li><code>/*[contains(text(), 'Opcja')]</code></li>
-                  <li><code>/div/..</code></li>
                   <li><code>/div/preceding-sibling::input</code></li>
                 </ul>
               </li>
@@ -1816,6 +1821,11 @@ THEN ... weryfikacja</code></pre>
                 </li>
               </ul>
             </aside>
+          </section>
+
+          <section>
+            <h2>Cykl ATDD</h2>
+            <img src="img/ATDD.png" alt="Cykl ATDD" />
           </section>
 
           <section>
@@ -2071,6 +2081,189 @@ THEN ... weryfikacja</code></pre>
 
 
         <section>
+          <section class="theory">
+            <h3>Automatyzacja środowiska</h3>
+          </section>
+
+          <section class="theory">
+            <h2>Po co osobne środowisko testowe?</h2>
+
+            <ul>
+              <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
+              <li>'U mnie działa'!</li>
+              <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
+            </ul>
+          </section>
+
+          <section class="theory">
+            <h2>Wirtualizacja </h2>
+            <ul>
+              <li>Skrypty budujące</li>
+              <li>Vagrant</li>
+              <li>Npm/Choco/etc.</li>
+              <li>Chef/puppet/etc.</li>
+              <li>Docker</li>
+              <li>CI</li>
+              <li>IaaC</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+
+          <section>
+            <h2>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h2>
+          </section>
+
+          <section>
+            <h2>Cele testowania</h2>
+            <h3>Typy testów</h3>
+
+            <img class="big white-background"
+                 src="img/agile_testing_quadrants_empty.png"
+                 alt="Rola QA" />
+          </section>
+
+          <section class="assignment">
+            <h1>Zadanie</h1>
+
+            <time id="quadrants-assignment" class="countdown">
+              <span class="hours">00</span>:<span class="minutes">10</span>:<span class="seconds">00</span>
+            </time>
+
+            <script>
+              (function () {
+                "use strict";
+
+                var element = document.getElementById("quadrants-assignment");
+
+                element.addEventListener("click", createTimer(element, minutes(10)));
+              } ());
+            </script>
+
+            <aside class="notes">
+              <ul>
+                <li class="speaker">RAZEM</li>
+                <li><time>10 minut</time></li>
+                <li>
+                  ZADANIE: Pokładaj karteczki do dobrych kwadratów. Chmurki – automated/manual/tools
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section class="theory">
+            <h2>Cele testowania</h2>
+            <h3>Typy testów</h3>
+
+            <img class="big white-background"
+                 src="img/agile_testing_quadrants.png"
+                 alt="Rola QA" />
+          </section>
+
+          <section class="theory">
+            <h2>Rola QA w zespole</h2>
+
+            <img class="big white-background" src="img/agile_testing_quadrants2.png" alt="Rola QA" />
+          </section>
+
+          <section class="theory">
+            <h2>Rola QA - Indetyfikacja wartości</h2>
+            <ul>
+              <li>Provide continuous feedback.</li>
+              <li>Deliver value to the customer.</li>
+              <li>Enable face-to-face communication.</li>
+              <li>Have courage.</li>
+              <li>Keep it simple.</li>
+              <li>Practice continuous improvement.</li>
+              <li>Respond to change.</li>
+              <li>Self-organize.</li>
+              <li>Focus on people.</li>
+              <li>Enjoy.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Rola QA</h2>
+
+            <img class="big white-background"
+                 src="img/interaction_of_roles.png"
+                 alt="Rola QA" />
+          </section>
+
+          <section class="theory">
+            <h2>Rola QA - kierunki</h2>
+
+            <img class="big white-background"
+                 src="img/sherlock.png"
+                 alt="Detektyw" />
+          </section>
+
+          <section class="theory">
+            <ul>
+              <li>Testing craftmanship</li>
+              <li>Testing Dojos</li>
+              <li>Programming Katas</li>
+              <li>Exploratory testing</li>
+              <li>XP pracites</li>
+              <li>Learn new language/new framework</li>
+              <li>Test design, code design, design patterns</li>
+              <li>…?</li>
+            </ul>
+          </section>
+
+          <!--
+          <section class="theory">
+            <h2>Exploratory testing</h2>
+            <ul>
+              <li>Learn about the product</li>
+              <li>Learn about the market</li>
+              <li>Learn about the ways the product could fail</li>
+              <li>Learn about the weaknesses of the product</li>
+              <li>Learn about how to test the product</li>
+              <li>Test the product</li>
+              <li>Report the problems</li>
+              <li>Advocate for repairs</li>
+              <li>Develop new tests based on what you have learned so far</li>
+            </ul>
+
+            <br/><br/>
+            <small>
+              <a href="http://www.satisfice.com/tools/htsm.pdf">
+                http://www.satisfice.com/tools/htsm.pdf
+              </a>
+            </small><br/>
+            <small>
+              <a href="http://msdn.microsoft.com/en-us/library/jj620911.aspx">
+                http://msdn.microsoft.com/en-us/library/jj620911.aspx
+              </a>
+            </small><br/>
+            <small>
+              <a href="http://www.satisfice.com/tools/procedure.pdf">
+                http://www.satisfice.com/tools/procedure.pdf
+              </a>
+            </small>
+
+            <aside class="notes">
+              <p>
+                Exploratory testing is central to this quadrant. During exploratory testing
+                sessions, the tester simultaneously designs and performs tests, using critical
+                thinking to analyze the results. This offers a much better opportunity to learn
+                about the application than scripted tests. We’re not talking about ad hoc testing, which is impromptu and improvised. Exploratory testing is a more
+                thoughtful and sophisticated approach than ad hoc testing. It is guided by a
+                strategy and operates within defined constraints. From the start of each
+                project and story, testers start thinking of scenarios they want to try. As small
+                chunks of testable code become available, testers analyze test results, and as
+                they learn, they find new areas to explore. Exploratory testing works the system in the same ways that the end users will. Testers use their creativity and
+                intuition. As a result, it is through this type of testing that many of the most
+                serious bugs are usually found.
+              </p>
+            </aside>
+          </section>
+          -->
+        </section>
+
+        <section>
 
           <section>
             <h2>Dziękujemy za uwagę!</h2>
@@ -2119,56 +2312,6 @@ THEN ... weryfikacja</code></pre>
                 </a>
               </li>
             </ul>
-
-            <article class="nicer-container">
-              <h4><em>Zdjęcia: </em></h4>
-
-              <ul class="links">
-                <li>
-                  <a href="http://media-cache-ak0.pinimg.com/736x/df/3d/c9/df3dc94ebd8c1c424a1b4297b8881b2e.jpg">
-                    ScrumBay
-                  </a>,
-                  <a href="http://analizait.pl/wp-content/uploads/2012/08/modelKaskadowy.png">
-                    Waterfall
-                  </a>,
-                  <a href="http://manojjaggavarapu.files.wordpress.com/2012/07/redgreenrefacor.png">
-                    TDD Cycle
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.fitnesse.org">Fitnesse</a>, <a href="http://docs.seleniumhq.org">Selenium</a>
-                </li>
-                <li>
-                  <a href="http://4.bp.blogspot.com/_5q3g5rw4GBI/TFA1MnCDkZI/AAAAAAAAAAM/2IHEbv_YUHk/s1600/whitebox.jpg">White box</a>,
-                  <a href="http://johnkoessler.files.wordpress.com/2014/04/blackbox2.jpg">Black box</a>
-                </li>
-                <li>
-                  <a href="http://www.romanpichler.com/wp-content/uploads/2011/10/CustomerProxyPorductOwner.jpg">
-                    Agile Team
-                  </a>,
-                  <a href="http://butlerhouse.net/wp-content/uploads/2011/11/fishermans-agile-ux.jpg">
-                    Agile + UCD
-                  </a>,
-                  <a href="http://johnnyholland.org/wp-content/uploads/flow.jpg">
-                    Agile + UCD - Phases
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.suresystems.ca/wp-content/uploads/2014/01/iStock_000009905028Large.jpg">
-                    Małpa
-                  </a>,
-                  <a href="http://blogi.polskatimes.pl/zyskiistraty/wp-content/uploads/sites/22/2014/04/Dobromir2.jpg">
-                    Pomysłowy Dobromir
-                  </a>,
-                  <a href="http://www.pasaz.v10.pl/img/thumbs/p/93/b8/93b8a0c3a3a92c77e892b2427ae1fb33.jpg">
-                    Piekarnik
-                  </a>,
-                  <a href="http://ek.ua/jpg_zoom1/133466.jpg">
-                    Toster
-                  </a>
-                </li>
-              </ul>
-            </article>
           </section>
 
         </section>
