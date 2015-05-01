@@ -25,7 +25,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: "choco install ruby.devkit -y"
   config.vm.provision "shell", inline: "choco install nodejs -y"
   config.vm.provision "shell", inline: "choco install cmder -y"
-  config.vm.provision "shell", inline: "choco install firefox -y"
+  config.vm.provision "shell", inline: "choco install firefox -version 35.0.1 -y"
   config.vm.provision "shell", inline: "choco install sublimetext2 -y"
   config.vm.provision "shell", inline: "Restart-Computer -Force"
   config.vm.provision "shell", inline: "C:\\tools\\cmder\\vendor\\msysgit\\bin\\git.exe clone git://github.com/drewda/cucumber-sublime-bundle.git 'C:\\Users\\IEUser\\AppData\\Roaming\\Sublime Text 2\\Packages\\Cucumber'"
