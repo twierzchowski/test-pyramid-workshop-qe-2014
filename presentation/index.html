@@ -219,8 +219,12 @@
 
         <section id="test_plan">
           <section class="theory">
-            <h1>1h - test plany, strategie, metodyki </h1>
-            <h2>Testy oprogramowania</h2>
+            <h2>Test plany, strategie, metodyki </h2>
+            <h3>Testy oprogramowania</h3>
+            
+            <aside class="notes">
+            1h
+            </aside>
           </section>
 
           <section class="theory">
@@ -438,6 +442,7 @@
 
             <aside class="notes">
               <ul>
+                <li>1h - wprowadzenie user story, bdd itp. - plynne przejscie do warsztatu </li>
                 <li class="speaker">KAMILA</li>
                 <li><time>2 minuty</time></li>
                 <li>
@@ -1891,34 +1896,51 @@ THEN ... weryfikacja</code></pre>
           <section>
             <h2>Automatyzacja środowiska</h2>
           </section>
+          
           <section>
             <h2>Po co osobne środowisko testowe?</h2>
 
             <ul>
-            <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
-            <li>'U mnie działa'!</li>
-            <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
+              <li>'U mnie działa'!</li>
+              <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
+              <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>Continuous Integration</h2>
+            <ul>
+              <li>automatyczne buildy</li>
+              <li>automatyczne testy</li>
+              <li>automatyczne wdrożenie? (CD) </li>
             </ul>
           </section>
 
           <section>
-            <h2>Wirtualizacja </h2>
+            <h2>Provisioning</h2>
             <ul>
-                <li>Skrypty budujące</li>
-                <li>Vagrant</li>
-                <li>Npm/Choco/etc.</li>
-                <li>Chef/puppet/etc.</li>
-                <li>Docker</li>
-                <li>CI</li>
-                <li>IaaC</li>
+              <li>Chef/puppet/etc.</li>
+              <li>Npm/Choco/etc.</li>
             </ul>
           </section>
+          
+          <section>
+            <h2>Wirtualizacja środowiska</h2>
+            <ul>
+              <li>VirtualBox, VMWare, Hyper-V</li>
+              <li>Vagrant</li>
+              <li>Skrypty budujące</li>
+              <li>Docker</li>
+              <li>IaaC</li>
+            </ul>
+          </section>
+          
         </section>
 
         <section>
 
           <section>
-            <h1>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h1>
+            <h2>Rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h2>
           </section>
 
           <section>
@@ -2014,6 +2036,8 @@ THEN ... weryfikacja</code></pre>
         <li>XP pracites</li>
         <li>Learn new language/new framework</li>
         <li>Test design, code design, design patterns</li>
+        <li>Conferences: Quality Excites, Testwarez, Test Well, TestFest</li>
+        <li>Meetups: Quality Meetup, WrotQA, PtaQ, KraQA</li>
         <li>…?</li>
       </ul>
     </section>
@@ -2069,190 +2093,6 @@ THEN ... weryfikacja</code></pre>
 
   </section>
 
-
-        <section>
-          <section class="theory">
-            <h3>Automatyzacja środowiska</h3>
-          </section>
-
-          <section class="theory">
-            <h2>Po co osobne środowisko testowe?</h2>
-
-            <ul>
-              <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
-              <li>'U mnie działa'!</li>
-              <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
-            </ul>
-          </section>
-
-          <section class="theory">
-            <h2>Wirtualizacja </h2>
-            <ul>
-              <li>Skrypty budujące</li>
-              <li>Vagrant</li>
-              <li>Npm/Choco/etc.</li>
-              <li>Chef/puppet/etc.</li>
-              <li>Docker</li>
-              <li>CI</li>
-              <li>IaaC</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-
-          <section>
-            <h2>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h2>
-          </section>
-
-          <section>
-            <h2>Cele testowania</h2>
-            <h3>Typy testów</h3>
-
-            <img class="big white-background"
-                 src="img/agile_testing_quadrants_empty.png"
-                 alt="Rola QA" />
-          </section>
-
-          <section class="assignment">
-            <h1>Zadanie</h1>
-
-            <time id="quadrants-assignment" class="countdown">
-              <span class="hours">00</span>:<span class="minutes">10</span>:<span class="seconds">00</span>
-            </time>
-
-            <script>
-              (function () {
-                "use strict";
-
-                var element = document.getElementById("quadrants-assignment");
-
-                element.addEventListener("click", createTimer(element, minutes(10)));
-              } ());
-            </script>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">RAZEM</li>
-                <li><time>10 minut</time></li>
-                <li>
-                  ZADANIE: Pokładaj karteczki do dobrych kwadratów. Chmurki – automated/manual/tools
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section class="theory">
-            <h2>Cele testowania</h2>
-            <h3>Typy testów</h3>
-
-            <img class="big white-background"
-                 src="img/agile_testing_quadrants.png"
-                 alt="Rola QA" />
-          </section>
-
-          <section class="theory">
-            <h2>Rola QA w zespole</h2>
-
-            <img class="big white-background" src="img/agile_testing_quadrants2.png" alt="Rola QA" />
-          </section>
-
-          <section class="theory">
-            <h2>Rola QA - Indetyfikacja wartości</h2>
-            <ul>
-              <li>Provide continuous feedback.</li>
-              <li>Deliver value to the customer.</li>
-              <li>Enable face-to-face communication.</li>
-              <li>Have courage.</li>
-              <li>Keep it simple.</li>
-              <li>Practice continuous improvement.</li>
-              <li>Respond to change.</li>
-              <li>Self-organize.</li>
-              <li>Focus on people.</li>
-              <li>Enjoy.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Rola QA</h2>
-
-            <img class="big white-background"
-                 src="img/interaction_of_roles.png"
-                 alt="Rola QA" />
-          </section>
-
-          <section class="theory">
-            <h2>Rola QA - kierunki</h2>
-
-            <img class="big white-background"
-                 src="img/sherlock.png"
-                 alt="Detektyw" />
-          </section>
-
-          <section class="theory">
-            <ul>
-              <li>Testing craftmanship</li>
-              <li>Testing Dojos</li>
-              <li>Programming Katas</li>
-              <li>Exploratory testing</li>
-              <li>XP pracites</li>
-              <li>Learn new language/new framework</li>
-              <li>Test design, code design, design patterns</li>
-              <li>…?</li>
-            </ul>
-          </section>
-
-          <!--
-          <section class="theory">
-            <h2>Exploratory testing</h2>
-            <ul>
-              <li>Learn about the product</li>
-              <li>Learn about the market</li>
-              <li>Learn about the ways the product could fail</li>
-              <li>Learn about the weaknesses of the product</li>
-              <li>Learn about how to test the product</li>
-              <li>Test the product</li>
-              <li>Report the problems</li>
-              <li>Advocate for repairs</li>
-              <li>Develop new tests based on what you have learned so far</li>
-            </ul>
-
-            <br/><br/>
-            <small>
-              <a href="http://www.satisfice.com/tools/htsm.pdf">
-                http://www.satisfice.com/tools/htsm.pdf
-              </a>
-            </small><br/>
-            <small>
-              <a href="http://msdn.microsoft.com/en-us/library/jj620911.aspx">
-                http://msdn.microsoft.com/en-us/library/jj620911.aspx
-              </a>
-            </small><br/>
-            <small>
-              <a href="http://www.satisfice.com/tools/procedure.pdf">
-                http://www.satisfice.com/tools/procedure.pdf
-              </a>
-            </small>
-
-            <aside class="notes">
-              <p>
-                Exploratory testing is central to this quadrant. During exploratory testing
-                sessions, the tester simultaneously designs and performs tests, using critical
-                thinking to analyze the results. This offers a much better opportunity to learn
-                about the application than scripted tests. We’re not talking about ad hoc testing, which is impromptu and improvised. Exploratory testing is a more
-                thoughtful and sophisticated approach than ad hoc testing. It is guided by a
-                strategy and operates within defined constraints. From the start of each
-                project and story, testers start thinking of scenarios they want to try. As small
-                chunks of testable code become available, testers analyze test results, and as
-                they learn, they find new areas to explore. Exploratory testing works the system in the same ways that the end users will. Testers use their creativity and
-                intuition. As a result, it is through this type of testing that many of the most
-                serious bugs are usually found.
-              </p>
-            </aside>
-          </section>
-          -->
-        </section>
-
         <section>
 
           <section>
@@ -2274,14 +2114,15 @@ THEN ... weryfikacja</code></pre>
               <li>
                 <a href="http://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364">
                   Succeeding with Agile
+                </a>,
+                <a href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685">
+                  User Stories Applied
                 </a>
               </li>
               <li>
                 <a href="http://docs.seleniumhq.org">
                   Selenium
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://www.fitnesse.org">
                   Fitnesse
                 </a>
@@ -2289,14 +2130,10 @@ THEN ... weryfikacja</code></pre>
               <li>
                 <a href="http://cukes.info">
                   Cucumber
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://jnicklas.github.io/capybara">
                   Capybara
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://rspec.info">
                   RSpec
                 </a>
@@ -2346,7 +2183,7 @@ THEN ... weryfikacja</code></pre>
         progress: true,
         history: true,
         center: true,
-
+        
         theme: "default",
         transition: "slide",
         transitionSpeed: "fast",
