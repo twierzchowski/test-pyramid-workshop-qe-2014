@@ -1893,34 +1893,51 @@ THEN ... weryfikacja</code></pre>
           <section>
             <h2>Automatyzacja środowiska</h2>
           </section>
+          
           <section>
             <h2>Po co osobne środowisko testowe?</h2>
 
             <ul>
-            <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
-            <li>'U mnie działa'!</li>
-            <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
+              <li>'U mnie działa'!</li>
+              <li>Czasochłonne stawianie środowiska dla nowego pracownika</li>
+              <li>Środowisko powinno być (mniejszą) kopią środowiska produkcyjnego</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>Continuous Integration</h2>
+            <ul>
+              <li>automatyczne buildy</li>
+              <li>automatyczne testy</li>
+              <li>automatyczne wdrożenie? (CD) </li>
             </ul>
           </section>
 
           <section>
-            <h2>Wirtualizacja </h2>
+            <h2>Provisioning</h2>
             <ul>
-                <li>Skrypty budujące</li>
-                <li>Vagrant</li>
-                <li>Npm/Choco/etc.</li>
-                <li>Chef/puppet/etc.</li>
-                <li>Docker</li>
-                <li>CI</li>
-                <li>IaaC</li>
+              <li>Chef/puppet/etc.</li>
+              <li>Npm/Choco/etc.</li>
             </ul>
           </section>
+          
+          <section>
+            <h2>Wirtualizacja środowiska</h2>
+            <ul>
+              <li>VirtualBox, VMWare, Hyper-V</li>
+              <li>Vagrant</li>
+              <li>Skrypty budujące</li>
+              <li>Docker</li>
+              <li>IaaC</li>
+            </ul>
+          </section>
+          
         </section>
 
         <section>
 
           <section>
-            <h1>1h - rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h1>
+            <h2>Rozwoj QA, kompetencje, rola QA, testy eksploracyjne</h2>
           </section>
 
           <section>
@@ -2016,6 +2033,8 @@ THEN ... weryfikacja</code></pre>
         <li>XP pracites</li>
         <li>Learn new language/new framework</li>
         <li>Test design, code design, design patterns</li>
+        <li>Conferences: Quality Excites, Testwarez, Test Well, TestFest</li>
+        <li>Meetups: Quality Meetup, WrotQA, PtaQ, KraQA</li>
         <li>…?</li>
       </ul>
     </section>
@@ -2092,14 +2111,15 @@ THEN ... weryfikacja</code></pre>
               <li>
                 <a href="http://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364">
                   Succeeding with Agile
+                </a>,
+                <a href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685">
+                  User Stories Applied
                 </a>
               </li>
               <li>
                 <a href="http://docs.seleniumhq.org">
                   Selenium
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://www.fitnesse.org">
                   Fitnesse
                 </a>
@@ -2107,14 +2127,10 @@ THEN ... weryfikacja</code></pre>
               <li>
                 <a href="http://cukes.info">
                   Cucumber
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://jnicklas.github.io/capybara">
                   Capybara
-                </a>
-              </li>
-              <li>
+                </a>,
                 <a href="http://rspec.info">
                   RSpec
                 </a>
@@ -2164,7 +2180,7 @@ THEN ... weryfikacja</code></pre>
         progress: true,
         history: true,
         center: true,
-
+        
         theme: "default",
         transition: "slide",
         transitionSpeed: "fast",
