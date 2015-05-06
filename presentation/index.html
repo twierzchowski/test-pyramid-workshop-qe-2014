@@ -955,36 +955,6 @@
 
         </section>
 
-        <section>
-
-          <section class="break">
-            <h1>Przerwa</h1>
-
-            <time id="first-break" class="countdown">
-              <span class="hours">00</span>:<span class="minutes">05</span>:<span class="seconds">00</span>
-            </time>
-
-            <script>
-              (function () {
-                "use strict";
-
-                var element = document.getElementById("first-break");
-
-                element.addEventListener("click", createTimer(element, minutes(5)));
-              } ());
-            </script>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">RAZEM</li>
-                <li><time>5 minut</time></li>
-                <li>Kto chce, może odpalić aplikację i ją sprawdzić.</li>
-              </ul>
-            </aside>
-
-          </section>
-
-        </section>
 
         <section>
 
@@ -1031,171 +1001,36 @@
           </section>
 
         </section>
+<section>
 
-        <section>
+          <section class="break">
+            <h1>Przerwa</h1>
 
-          <section class="theory">
-            <h2>Podział testów</h2>
+            <time id="first-break" class="countdown">
+              <span class="hours">00</span>:<span class="minutes">05</span>:<span class="seconds">00</span>
+            </time>
 
-            <ul>
-              <li>Testy czarno-skrzynkowe</li>
-              <li>Testy biało-skrzynkowe</li>
-            </ul>
+            <script>
+              (function () {
+                "use strict";
+
+                var element = document.getElementById("first-break");
+
+                element.addEventListener("click", createTimer(element, minutes(5)));
+              } ());
+            </script>
 
             <aside class="notes">
               <ul>
-                <li class="speaker">KORNEL</li>
+                <li class="speaker">RAZEM</li>
                 <li><time>5 minut</time></li>
-
-                <li>
-                  <b>Blackbox</b>
-                </li>
-                <li>
-                  Metodyka ta rozpatruje możliwe dane wejściowe dla aplikacji i weryfikuje otrzymane wyniki.
-                </li>
-                <li>
-                  Można w uproszczeniu stwierdzić, iż testy czarnoskrzynkowe odpowiadają na pytanie "Co aplikacja robi?".
-                </li>
-                <li>
-                  Nie rozpatruje się w tym przypadku technicznych aspektów realizacji poszczególnych funkcjonalności ani procesów czy transformacji danych jakie prowadzą do osiągnięcia wyznaczonego celu.
-                </li>
-                <li>
-                  Większość testów czarnoskrzynkowych opiera się na interakcjach z GUI lub API w przypadku serwisów.
-                </li>
-                <li>
-                  Przykładem testu czarnoskrzynkowego może być test end to end funkcjonalności aplikacji, która polega na przesłaniu wiadomości od jednego użytkownika do drugiego.
-                </li>
-
-                <li>
-                  <b>Whitebox</b>
-                </li>
-                <li>
-                  Metodyka ta zwraca uwagę na wszelkie szczegóły techniczne związane z procesem prowadzącym do osiągnięcia założonych wyników.
-                </li>
-                <li>
-                  W uproszczeniu można stwierdzić, iż testy białoskrzynkowe odpowiadają na pytanie "Jak aplikacja realizuje swoje funkcjonalności?".
-                </li>
-                <li>
-                  Pisanie tego typu testów otwiera umożliwia  , ponieważ znajdują się w strefie udostępniającej pełne spektrum technicznych szczegółów.
-                </li>
-                <li>
-                  Przykładem testów białoskrzynkowych mogą być testy jednostkowe w dialekcie TDD lub BDD.
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section class="theory">
-            <h2>Black Box Testing</h2>
-
-            <img src="img/BlackBox.jpg" width="350" alt="White Box" />
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KORNEL</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Testy czarno-skrzynkowe są łatwe w użyciu i czytelne. Można na ich podstawie w bardzo prosty sposób stwierdzić czy aplikacja spełnia swoje zadanie. W tym kontekście nasuwa się wniosek, iż dobrze napisane testy czarno-skrzynkowe przez swoją czytelność stanowić mogą ważny element raportów na temat postępów prac dla interesariuszy biznesowych.
-                </li>
-                <li>
-                  Dzięki prostocie pomysłu testowania 'od zewnątrz', QA są w stanie w relatywnie krótkim czasie stworzyć zautomatyzowaną sieć wysokopoziomowych testów (GUI, e2e) skutecznie strzegących przed regresjami.
-                </li>
-                <li>
-                  Należy jednak pamiętać, iż zewnętrzne warstwy aplikacji są najczęściej poddawane zmianom, na które testy czarno-skrzynkowe są niezwykle wrażliwe.
-                </li>
-                <li>
-                  Wiąże się to z ich kruchością i potrzebą utrzymywania i przede wszystkim dostosowywania do wszelkich zmian formatu danych wejściowych lub sposobu ich wprowadzania.
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h2>BBT - przykład</h2>
-
-            <p class="nicer-container">
-              Test funkcjonalności (<code>end to end</code>):<br/>
-              <em>przesłanie wiadomości od jednego użytkownika do drugiego.</em>
-            </p>
-
-            <ul class="nicer-container">
-              <li>Loguję się jako użytkownik X.</li>
-              <li>Naciskam przycisk <em>wyślij wiadomość</em>.</li>
-              <li>Wybieram z menu rozwijanego użytkownika Y.</li>
-              <li>Wpisuję treść wiadomości.</li>
-              <li>Naciskam przycisk <em>wyślij</em>.</li>
-              <li>Wylogowuję się.</li>
-              <li>Loguję się jako użytkownik Y.</li>
-              <li>Naciskam na przycisk <em>Nowe wiadomości</em>.</li>
-              <li>W liście powiadomień szukam wiadomości od X.</li>
-              <li>Naciskam na najnowszą wiadomość.</li>
-              <li>Wiadomość zawiera treść, którą wysłał użytkownik X.</li>
-            </ul>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KORNEL</li>
-                <li><time>2 minuty</time></li>
+                <li>Kto chce, może odpalić aplikację i ją sprawdzić.</li>
               </ul>
             </aside>
 
-          </section>
-
-          <section class="theory">
-            <h2>White Box Testing</h2>
-
-            <img src="img/WhiteBox.jpg" alt="White Box" />
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KORNEL</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Niezaprzeczalnie najwększymi zaletami testów białoskrzynkowych jest ich głęboki wgląd w domenę aplikacji oraz gruntowność w pokryciu przypadków brzegowych. Dodatkowym plusem jest ich stabilność, która stanowi odzwierciedlenie stabilności kodu domenowego aplikacji.
-                </li>
-                <li>
-                  Dokładność i informatywność testów białoskrzynkowych czyni je idealnym źródłem wiedzy dla developerów.
-                </li>
-                <li>
-                  Jeżeli team developerski przejmuje od kogoś projekt, zyskuje dużą dawkę pewności i swobody w jego rozwoju jeżeli ma do dyspozycji solidną sieć testów białoskrzynkoych.
-                </li>
-                <li>
-                  Oznacza to dla nich skrócony czas wdrażania się w technikalia oraz zapewnienie, że zostaną poinformowani gdy ich zmiany naruszą utrzymanie niezmienników kluczowych dla domeny systemu.
-                </li>
-                <li>
-                  Testy 'od wewnątrz' oczywiście również wymagają utrzymywania - zmiany staja się potrzebne w przypadku modyfikacji zachowań związanych z logiką biznesową.
-                </li>
-                <li>
-                  Dodatkową ich wadą jest bardzo ścisłe powiązanie z testowanym kodem, niezbędne do osiągnięcia pełnego potencjału wglądu w jego domenę. Wiąże się to z potrzebą postawienia całej aplikacji na odpowiedniej platformie, wraz ze wszystkimi niezbędnymi narzędziami po to by móc uruchomić przygotowany dla niej zestaw testów białoskrzynkowych.
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h2>WBT - przykład</h2>
-            <ul>
-              <li>Istnieją obiekty <em>acc1</em> i <em>acc2</em> typu <em>BankAccount</em>.</li>
-              <li>Inicjalizuję obiekt <em>acc1 = BankAccount.withBalance(200)</em>.</li>
-              <li>Inicjalizuję obiekt <em>acc2 = BankAccount.withBalance(10)</em>.</li>
-              <li>Dokonuję wywołania <em>acc1.transfer(acc2, 50)</em>.</li>
-              <li>Oczekuję, iż <em>acc2.balance() == 60</em>.</li>
-              <li>Oczekuję, iż <em>acc1.balance() == 150</em>.</li>
-            </ul>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">KORNEL</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Mówimy o testach od wewnątrz/zewnątrz, przez co możemy wysnuć analogię (piramida) - patrzenie z góry, od dołu.
-                </li>
-              </ul>
-            </aside>
           </section>
 
         </section>
-
         <section>
 
           <section>
@@ -1816,11 +1651,6 @@ THEN ... weryfikacja</code></pre>
           </section>
 
           <section>
-            <h2>Cykl ATDD</h2>
-            <img src="img/ATDD.png" alt="Cykl ATDD" />
-          </section>
-
-          <section>
             <h2>Executable Specification</h2>
             <h3>Fitnesse</h3>
 
@@ -1856,30 +1686,6 @@ THEN ... weryfikacja</code></pre>
                 <li><time>2 minuty</time></li>
                 <li>
                   Na sam koniec chcielibyśmy powiedzieć dosłownie dwa słowa na temat korzyści i utrzymaniu testów.
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h2>Utrzymanie testów</h2>
-
-            <ul>
-              <li>Testy czarno-skrzynkowe się łatwo pisze ...</li>
-              <li><em>... i ciężko utrzymuje.</em></li>
-              <li>Testy biało-skrzynkowe pisze się gorzej ...</li>
-              <li><em>... i jeśli są źle napisane, utrzymuje się je równie źle.</em></li>
-            </ul>
-
-            <aside class="notes">
-              <ul>
-                <li class="speaker">WOJTEK</li>
-                <li><time>2 minuty</time></li>
-                <li>
-                  Testy to również kod produkcyjny - musimy o nie dbać.
-                </li>
-                <li>
-                  Regularne CR, Wzorce projektowe, Refactoring, Dbałość o szczegóły i spójność.
                 </li>
               </ul>
             </aside>
