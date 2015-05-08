@@ -10,17 +10,17 @@ Vagrant.configure(2) do |config|
   config.winrm.username = "IEUser"
   config.winrm.password = "Passw0rd!"
   config.vm.boot_timeout = 300
-  
+
   config.vm.network :forwarded_port, guest: 5985, host: 55985, id: "winrm", auto_correct: true
   #config.vm.network "private_network"
-  
+
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
     vb.memory = "1024"
     vb.cpus = 2
     vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
   end
-  
+
   config.vm.provision "shell", inline: "choco install ruby1.9 -y"
   config.vm.provision "shell", inline: "choco install ruby.devkit -y"
   config.vm.provision "shell", inline: "choco install nodejs -y"
